@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freeversity</title>
-    <link href="css/interface.css" rel="stylesheet">
+    <link href="/css/interface.css" rel="stylesheet">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,18 +74,15 @@
 
 
     <section class="un-goals" style="position: relative;"> 
-        <div>
+        <div id="text-learning">
             <h1>Learning Starts </h1>
             <h2>Here ...</h2>
-        </div>
-        <div id="geminiDataContainer" style="position: absolute; height: auto; width: 40%; z-index: 100; right: 10%; padding: 0 30px; top: 10%; text-align: justify;"><%= geminiData %></div>
-
-        <div  style="color: rgb(186, 189, 189); font-size: 30px; font-weight: 400;  transform: rotate(90deg); transform-origin: top left; position: absolute; right: -500px; top:8%">
-            We are engineers, we declare VARS not Wars
-        </div>
         <form>
-            <input id="gemini" type="search" name="something" id="" placeholder="Have something in mind?" style="font-size:20px;padding-left: 20px; color: #21325E; height: 70px; width: 50%; background-color:white; border: 5px solid #697dae; border-radius: 3px;" autocomplete="off">
+            <input id="gemini" type="search" name="something" id="" placeholder="Have something in mind?" style="font-size:20px;padding-left: 20px;color: #21325E; background-color:white; border: 5px solid #697dae; border-radius: 3px;" autocomplete="off">
         </form>
+        </div>
+        <div id="geminiDataContainer" style="padding: 0 30px;text-align: justify; position: relative;"><%= geminiData %></div>
+        <i class="fa-solid fa-copy" style="color: white;" id="copyButton"></i>
     </section>
 
 
@@ -126,11 +123,6 @@
        </div>
 
     </div>
-
-    <script>
-        
-    </script>
 <script src="/js/interface.js"></script>
-
 </body>
 </html>
