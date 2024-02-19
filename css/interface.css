@@ -44,11 +44,6 @@ html,body{
     color: black;
     font-family:"Ubuntu",sans-serif;
     padding-right: 20px;
-    transition: 0.3s;
-}
-
-.items a:hover{
-    color: rgb(175, 172, 172);
 }
 
 .items{
@@ -113,9 +108,7 @@ html,body{
 .content{
     font-family: "Bitter", cursive;
     color: #21325E;
-    margin-top: 0;
     /* background-color: pink; */
-    transition: 0.5s;
     height: 80%;
     width:100%;
     animation: content 1s ease-out forwards;
@@ -222,55 +215,22 @@ button{
 }
 
 @keyframes searchInVisible {
-    0%{
+    from{
         margin-left: 0px;
     }
-    99%{
+    to{
         margin-left: 1000px;
     }
-    100%{
-        display: none;
-    }
 }
 
-@keyframes sectionMargin {
-    from{
-        margin-top: 0px;
-    }
-    to{
-        margin-top: 150px;
-    }
-}
 
-@keyframes sectionMarginBack {
-    from{
-        margin-top: 150px;
-    }
-    to{
-        margin-top: 0px;
-    }
+#geminiDataContainer{
+    font-family: 'Ubuntu';
+    letter-spacing: 2px;
 }
 
 
 
-
-
-.testimonial-section{
-    height: 100%;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10% 10%;
-}
-
-.blocks{
-    height: 40%;
-    width: 20%;
-    background-color: #21325E;
-    float: left;
-    border-radius: 2%;
-}
 
 
 
@@ -361,47 +321,27 @@ i{
 .un-goals{
     background-color: #21325E;
     width: 100%;
-    min-height:100%;
+    min-height: 100%;
     color: white;
     font-family: "Bitter",sans-serif;
-    padding: 10% 5%;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 3%;
 }
 
 .un-goals h1{
-    font-size: 5vw;
+    font-size: 80px;
     font-weight: 400;
     text-align: left;
     /* margin-left: 50px; */
 }
 
 .un-goals h2{
-    font-size: 8vw;
+    font-size: 120px;
     font-weight: 400;
     text-align: left;
     margin-top: -50px;;
 }
 
-#text-learning{
-    width: 50%;
-}
 
-#gemini{
-    width: 100%;
-    height: 70px;
-}
-
-#geminiDataContainer{
-    width: 50%;
-    font-family: 'Ubuntu';
-    letter-spacing: 2px;
-    height: auto;
-}
-
-#copyButton{
-    position: absolute; top: 50px; right: 50px; cursor: pointer;
-}
 
 
 @media screen and (max-width: 900px) {
@@ -445,45 +385,6 @@ i{
     .drop-button{
         display: flex;
     }
-
-
-    .un-goals{
-        background-color: #21325E;
-        width: 100%;
-        min-height:100%;
-        color: white;
-        font-family: "Bitter",sans-serif;
-        padding: 5%;
-    }
-
-    .un-goals h1{ 
-        font-size: 10vw;
-    }
-
-    .un-goals h2{
-        font-size: 8vw;
-    }
-
-    #gemini{
-        width: 100%;
-    }
-
-    #text-learning{
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #geminiDataContainer{
-        width: 100%;
-    }
-
-    #copyButton{
-        position: absolute; top: 400px; cursor: pointer; right: 0;
-    }
-
 }
 
 
@@ -539,40 +440,69 @@ i{
         margin-top: 60px;
     }
 
-    .un-goals{
-        background-color: #21325E;
-        width: 100%;
-        min-height:100%;
-        color: white;
-        font-family: "Bitter",sans-serif;
-        padding: 5%;
-    }
+}
 
-    .un-goals h1{ 
-        font-size: 12vw;
-        padding-bottom: 30px;
-    }
 
-    .un-goals h2{
-        font-size: 10vw;
-    }
 
-    #gemini{
-        width: 100%;
-        height: 50px;
-    }
 
-    #text-learning{
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    #geminiDataContainer{
-        width: 100%;
-    }
 
+
+/* new-interface */
+
+
+.testimonial-section{
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10% 5%;
+}
+
+.blocks{
+    height: 400px;
+    width: 290px;
+    background-color: #21325E;
+    float: left;
+    border-radius: 2% 20% 2% 2%;
+    color:white;
+
+    display: flex;
+    position: relative;
+}
+
+.blocks h1{
+    font-family: ubuntu,sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+
+.try-now{
+    height: 40px;
+    font-size: 18px;
+    background-color: transparent;
+    border:2px solid white;
+    color: white;
+    position: absolute;
+    top:270px;
+    left:2vw;
+}
+
+.try-now:hover{
+    background-color: white;
+    opacity: 40%;
+    color: black;
+    
+}
+
+@media (min-width:800px) and (max-width:1350px){
+    
+    .blocks{
+        display: block;
+    }
 }
 
